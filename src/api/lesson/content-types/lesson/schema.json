@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lessons",
+  "info": {
+    "singularName": "lesson",
+    "pluralName": "lessons",
+    "displayName": "Уроки",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "module": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::module.module"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Урок",
+        "Семинар",
+        "Экзамен"
+      ],
+      "default": "Урок",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "default": 500
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "tasks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "task.zadachi"
+    }
+  }
+}

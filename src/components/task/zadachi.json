@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_task_zadachi",
+  "info": {
+    "displayName": "Задачи",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "richtext",
+      "required": true
+    },
+    "is_editor": {
+      "type": "boolean",
+      "default": true
+    },
+    "html": {
+      "type": "richtext"
+    },
+    "css": {
+      "type": "richtext"
+    },
+    "js": {
+      "type": "richtext"
+    }
+  }
+}

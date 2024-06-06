@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "sokets",
+  "info": {
+    "singularName": "soket",
+    "pluralName": "sokets",
+    "displayName": "Сокет"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users": {
+      "type": "json"
+    }
+  }
+}
